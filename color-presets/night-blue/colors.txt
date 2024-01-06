@@ -1,0 +1,5 @@
+#0b0036
+#969696
+#f7ff63
+
+[*] RUN THE 'bubble-run.sh' SCRIPT TO APPLY THE NEW COLORS [*]
