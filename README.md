@@ -2,10 +2,12 @@
 
 **Bubble Polybar** is designed to prioritize **user comfort** and **elevate productivity** on Linux systems. These Polybar dotfiles have been curated with a keen emphasis on **streamlining your experience**, offering a **seamless computing environment**.
 <p align="center">
+<a href="color-presets/coal/colors.txt">
 <img src="imgs/black.jpg"
 	alt="black bar"
 	width="100%"
 />
+</a>
 </p>
 
 ## Installation
