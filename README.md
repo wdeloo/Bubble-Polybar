@@ -88,7 +88,7 @@ To **run** or **refresh** the bubble polybar run the "**bubble-run.sh**" script:
 
 	$: ~/.config/polybar/scripts/bubble-run.sh
 ## Customize Bar
-***DONT FORGET TO REFRESH THE POLYBAR AFTER MAKING ANY CHANGE IN THE BAR***:
+***DONT FORGET TO REFRESH THE POLYBAR AFTER MAKING ANY CHANGE IN THE BAR***
 ### **Change Colors**
 To change the colors, you have to edit the **~/.config/polybar/bubble-polybar/scripts/colors.txt** file and write **3 colors** in [hex format](https://g.co/kgs/bRy6NYK) in the **3 first lines** (*backgroung, text, icons*). Then, refresh the bar to apply the changes:
 
