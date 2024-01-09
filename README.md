@@ -60,7 +60,13 @@ Ensure you have **Polybar** installed in your system (you can use the packet man
 If you prefer to **build it from source**, you can download it from [the official Polybar GitHub repository](https://github.com/polybar/polybar).
 ### **Install dependencies**
 In order to run this polybar dotfiles, you have to install the following dependencies:
-- **bash**, **zsh**, **net-tools**, **sed**, **bc**, **awk**, **coreutils**, **grep**, **ffmpeg**, **procps-ng**, **cron** (install them through the packet manager of your linux distribution).
+- **bash**, **zsh**, **net-tools**, **sed**, **bc**, **awk**, **coreutils**, **grep**, **ffmpeg**, **procps-ng**, **cron**, **python3** (install them through the packet manager of your linux distribution).
+- **spotify-cli** (install it through **pip**):
+
+		$: pip install spotify-cli-linux
+	If it shows an "externally-managed-environment" error, try this:
+
+		$: pip install spotify-cli-linux --break-system-packages
 - **CodeNewRoman Nerd Font** (download it from [Nerd Fonts](https://www.nerdfonts.com/font-downloads)) and **Hack Font** (download it from [source-foundry's GitHub](https://github.com/source-foundry/Hack/releases/tag/v3.003)). Unzip them and place them in **/usr/share/fonts**.
 
 		$: unzip folder.zip
@@ -87,3 +93,6 @@ To **run** or **refresh** the bubble polybar run the "**bubble-run.sh**" script:
 To change the colors, you have to edit the **~/.config/polybar/bubble-polybar/scripts/colors.txt** file.
 
 	$: nano ~/.config/polybar/bubble-polybar/scripts/colors.txt
+**DONT FORGET TO REFRESH THE POLYBAR AFTER MAKING ANY CHANGE IN THE BAR**:
+
+	$: ~/.config/polybar/scripts/bubble-run.sh
