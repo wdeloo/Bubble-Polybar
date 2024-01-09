@@ -42,7 +42,7 @@ Here are some examples of how this bar looks with some **color presets** (learn 
 </a>
 </p>
 
-## Installation
+## **Installation**
 ### **Install Polybar**
 Ensure you have **Polybar** installed in your system (you can use the packet manager of your Linux distribution to install it).
 - **Debian**:
@@ -83,16 +83,14 @@ Edit the **cron** file running the following command:
 Add the following line to the opened file:
 
 	* * * * * ~/.config/polybar/scripts/xip/xcc.sh
-## Run Bubble Polybar
+## **Run** or **Refresh** Bubble Polybar
 To **run** or **refresh** the bubble polybar run the "**bubble-run.sh**" script:
 
 	$: ~/.config/polybar/scripts/bubble-run.sh
 ## Customize Bar
-
+***DONT FORGET TO REFRESH THE POLYBAR AFTER MAKING ANY CHANGE IN THE BAR***:
 ### **Change Colors**
-To change the colors, you have to edit the **~/.config/polybar/bubble-polybar/scripts/colors.txt** file.
+To change the colors, you have to edit the **~/.config/polybar/bubble-polybar/scripts/colors.txt** file and write **3 colors** in [hex format](https://g.co/kgs/bRy6NYK) in the **3 first lines** (*backgroung, text, icons*). Then, refresh the bar to apply the changes:
 
 	$: nano ~/.config/polybar/bubble-polybar/scripts/colors.txt
-**DONT FORGET TO REFRESH THE POLYBAR AFTER MAKING ANY CHANGE IN THE BAR**:
-
 	$: ~/.config/polybar/scripts/bubble-run.sh
