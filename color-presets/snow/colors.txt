@@ -1,0 +1,5 @@
+#ffffff
+#ababab
+#000000
+
+[*] RUN THE 'bubble-run.sh' SCRIPT TO APPLY THE NEW COLORS [*]
