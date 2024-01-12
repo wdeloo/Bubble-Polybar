@@ -1,0 +1,11 @@
+firefox
+code
+nautilus
+kitty
+rofi -show run
+
+1: browser launcher
+2: file editor
+3: file manager
+4: terminal
+5: program launcher
