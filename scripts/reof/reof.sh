@@ -8,9 +8,9 @@ if [ "$1" = "toggle" ]; then
 	fi
 elif [ "$1" = "do" ]; then
 	if [ "$catBin" = "0" ]; then
-		systemctl poweroff
+		sudo /usr/bin/systemctl poweroff
 	else
-		systemctl reboot
+		sudo /usr/bin/systemctl reboot
 	fi
 else
 	if [ "$catBin" = "0" ]; then
