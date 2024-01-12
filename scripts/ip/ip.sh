@@ -3,7 +3,7 @@ primary=$(cat ~/.config/polybar/bubble-polybar/scripts/colors.txt | sed -n 3p)
 interfaces=$(ifconfig | awk '{print $1}' | grep ":" | tr -d ":" | grep -wv "lo" | grep -v "veth"; echo "internet")
 interfacesQuantity=$(echo -n "$interfaces" | wc -w)
 bin=$(cat ~/.config/polybar/bubble-polybar/scripts/ip/bin)
-interfazActual=$(echo "$interfaces" | head -n "$bin" | tail -n 1)
+interfazActual=$(echo "$interfaces" | sed -n "${bin}p")
 if [ "$1" = "toggle" ]; then
 	if [ $bin -ge $interfacesQuantity ]; then
 		echo "1" > ~/.config/polybar/bubble-polybar/scripts/ip/bin
