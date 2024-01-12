@@ -1,6 +1,6 @@
 # **Bubble Polybar**
 
-**Bubble Polybar** is designed to prioritize **user comfort** and **elevate productivity** on Linux systems. These Polybar dotfiles have been curated with a keen emphasis on **streamlining your experience**, offering a **seamless computing environment**.
+**Bubble Polybar** is designed to prioritize **user comfort** and **elevate productivity** on Linux systems. These Polybar dotfiles have been curated with a keen emphasis on **streamlining your experience**, offering a **seamless computing environment**. It also has a **spotify module** in which you can **open spotify**, know the **name of the current playing song** and **its progress**, **pause**, **play** and **change the song**.
 <p align="center">
 <a href="color-presets/coal/colors.txt">
 <img src="imgs/coal.gif"
@@ -60,37 +60,37 @@ Ensure you have **Polybar** installed in your system (you can use the packet man
 If you prefer to **build it from source**, you can download it from [the official Polybar GitHub repository](https://github.com/polybar/polybar).
 ### **Install dependencies**
 In order to run this polybar dotfiles, you have to install the following dependencies:
-- **bash**, **zsh**, **net-tools**, **sed**, **bc**, **awk**, **coreutils**, **grep**, **ffmpeg**, **procps-ng**, **cron**, **python3** (install them through the packet manager of your linux distribution).
+- **bash**, **net-tools**, **sed**, **bc**, **awk**, **coreutils**, **grep**, **ffmpeg**, **procps-ng**, **cron**, **python3** (install them through the packet manager of your linux distribution).
 - **spotify-cli** (install it through **pip**):
 
 		$: pip install spotify-cli-linux
-	If it shows an "externally-managed-environment" error, try this:
-
-		$: pip install spotify-cli-linux --break-system-packages
 - **CodeNewRoman Nerd Font** (download it from [Nerd Fonts](https://www.nerdfonts.com/font-downloads)) and **Hack Font** (download it from [source-foundry's GitHub](https://github.com/source-foundry/Hack/releases/tag/v3.003)). Unzip them and place them in **/usr/share/fonts**.
 
 		$: unzip folder.zip
   		$: sudo mv folder /usr/share/fonts
 ### **Install Bubble Polybar**
-Clone this repository into the **~/.config/polybar** directory (create it if doesn't exist).
+- Clone this repository into the **~/.config/polybar** directory (create it if doesn't exist).
 
-	$: mkdir -p ~/.config/polybar
-	$: cd ~/.config/polybar
-	$: git clone https://github.com/wdeloo/bubble-polybar
-Edit the **cron** file running the following command:
+		$: mkdir -p ~/.config/polybar
+		$: cd ~/.config/polybar
+		$: git clone https://github.com/wdeloo/bubble-polybar
+- Edit the **cron** file running the following command:
 
-	$: crontab -e
-Add the following line to the opened file:
+		$: crontab -e
+	and add the following line to the opened file:
 
-	* * * * * ~/.config/polybar/scripts/xip/xcc.sh
+		* * * * * ~/.config/polybar/bubble-polybar/scripts/ip/ip.sh getPub
+- Edit the **~/.config/polybar/bubble-polybar/scripts/programs.txt** file and edit the **programs** you want to run when clicking on each module at the right of the bar (*browser*, *text/code editor*, *file manager*, *terminal*, *launcher*):
+
+		$: nano ~/.config/polybar/bubble-polybar/scripts/programs.txt
 ## **Run** or **Refresh** Bubble Polybar
-To **run** or **refresh** the bubble polybar run the "**bubble-run.sh**" script:
+- Run the "**bubble-run.sh**" script:
 
-	$: ~/.config/polybar/scripts/bubble-run.sh
+		$: ~/.config/polybar/scripts/bubble-run.sh
 ## Customize Bar
 ***DONT FORGET TO REFRESH THE POLYBAR AFTER MAKING ANY CHANGE IN THE BAR***
 ### **Change Colors**
-To change the colors, you have to edit the **~/.config/polybar/bubble-polybar/scripts/colors.txt** file and write **3 colors** in [hex format](https://g.co/kgs/bRy6NYK) in the **3 first lines** (*backgroung, text, icons*). Then, refresh the bar to apply the changes:
+- Edit the **~/.config/polybar/bubble-polybar/scripts/colors.txt** file and write **3 colors** in [hex format](https://g.co/kgs/bRy6NYK) in the **3 first lines** (*background*, *text*, *icons*). Then, refresh the bar to apply the changes:
 
-	$: nano ~/.config/polybar/bubble-polybar/scripts/colors.txt
-	$: ~/.config/polybar/scripts/bubble-run.sh
+		$: nano ~/.config/polybar/bubble-polybar/scripts/colors.txt
+		$: ~/.config/polybar/scripts/bubble-run.sh
