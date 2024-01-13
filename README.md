@@ -80,6 +80,13 @@ In order to run this polybar dotfiles, you have to install the following depende
 	and add the following line to the opened file:
 
 		* * * * * ~/.config/polybar/bubble-polybar/scripts/ip/ip.sh getPub
+- Allow turning off and reboot as non privileged user editing **/etc/sudoers**:
+
+		$: sudo nano /etc/sudoers
+	and add the following two lines:
+
+		%wheel ALL=(ALL:ALL) NOPASSWD: /usr/bin/systemctl poweroff
+		%wheel ALL=(ALL:ALL) NOPASSWD: /usr/bin/systemctl reboot
 - Edit the **~/.config/polybar/bubble-polybar/scripts/programs.txt** file and edit the **programs** you want to run when clicking on each module at the right of the bar (*browser*, *text/code editor*, *file manager*, *terminal*, *launcher*):
 
 		$: nano ~/.config/polybar/bubble-polybar/scripts/programs.txt
