@@ -92,3 +92,4 @@ In order to run this polybar dotfiles, you have to install the following depende
 - Edit the **\*.sh** script in **~/.config/polybar/bubble-polybar/scripts/\*** and search for the icon and replace it. For example, if you want to change the clock icon at the left of the time, edit the **~/.config/polybar/bubble-polybar/scripts/date/date.sh** file and replace the clock icon with something else:
 
 		$: nano ~/.config/polybar/bubble-polybar/scripts/date/date.sh
+	you can find some icons to use in [Nerd Fonts](https://www.nerdfonts.com/cheat-sheet).
