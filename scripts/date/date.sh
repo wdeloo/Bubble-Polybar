@@ -9,9 +9,9 @@ if [ "$1" = "toggle" ]; then
 	fi
 else
 	Date=$(date +'%d-%m-%Y')
-	Time=$(date | awk '{print $4}')
+	Time=$(date +'%H:%M:%S')
 	if [ "$catBin" = "0" ]; then
-		echo "%{F${primary}} %{F-}${Time}"
+		echo "%{F${primary}} %{F-}${Time}"
 	else
 		echo "%{F${primary}} %{F-}${Date}"
 	fi

@@ -19,8 +19,8 @@ if [ "$1" = "showHide" ]; then
 	fi
 else
 	if [ "$catBin" = "0" ]; then
-		echo "%{T1}﯎"
+		echo "󰛐"
 	else
-		echo "%{T2}﯏ "
+		echo "󰛑"
 	fi
 fi

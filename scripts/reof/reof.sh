@@ -14,7 +14,7 @@ elif [ "$1" = "do" ]; then
 	fi
 else
 	if [ "$catBin" = "0" ]; then
-		echo "襤"
+		echo ""
 	else
 		echo ""
 	fi

@@ -4,8 +4,8 @@ nautilus
 kitty
 rofi -show run
 
-1: browser (firefox, google-chrome...)
-2: file editor (code, gnome-text-editor, featherpad...)
+1: browser launcher (firefox, google-chrome...)
+2: text editor (code, gnome-text-editor, featherpad...)
 3: file manager (nautilus, dolphin...)
 4: terminal (kitty, qterminal, gnome-terminal...)
 5: program launcher (rofi, ulauncher...)

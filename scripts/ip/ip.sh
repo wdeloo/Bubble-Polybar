@@ -19,7 +19,7 @@ elif [ "$1" = "getPub" ]; then
 else
 	if [ "$interfazActual" != "internet" ]; then
 		ip=$(ifconfig "$interfazActual" | grep -w "inet" | awk '{print $2}')
-		echo "%{F${primary}}直 %{F-}${ip}"
+		echo "%{F${primary}}󰖩 %{F-}${ip}"
 	else
 		ip=$(cat ~/.config/polybar/bubble-polybar/scripts/ip/pubIp)
 		if [ "$ip" = "err" ]; then
