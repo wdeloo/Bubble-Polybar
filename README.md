@@ -80,11 +80,15 @@ In order to run this polybar dotfiles, you have to install the following depende
 ## **Run** or **Refresh** Bubble Polybar
 - Run the "**bubble-run.sh**" script:
 
-		$: ~/.config/polybar/scripts/bubble-polybar/bubble-run.sh
+		$: ~/.config/polybar/bubble-polybar/scripts/bubble-run.sh
 ## Customize Bar
 ***DONT FORGET TO REFRESH THE POLYBAR AFTER MAKING ANY CHANGE IN THE BAR***
 ### **Change Colors**
 - Edit the **~/.config/polybar/bubble-polybar/scripts/colors.txt** file and write **3 colors** in [hex format](https://g.co/kgs/bRy6NYK) in the **3 first lines** (*background*, *text*, *icons*). Then, refresh the bar to apply the changes:
 
 		$: nano ~/.config/polybar/bubble-polybar/scripts/colors.txt
-		$: ~/.config/polybar/scripts/bubble-polybar/bubble-run.sh
+		$: ~/.config/polybar/bubble-polybar/scripts/bubble-run.sh
+### **Change Icons**
+- Edit the **\*.sh** script in **~/.config/polybar/bubble-polybar/scripts/\*** and search for the icon and replace it. For example, if you want to change the clock icon at the left of the time, edit the **~/.config/polybar/bubble-polybar/scripts/date/date.sh** file and replace the clock icon with something else:
+
+		$: nano ~/.config/polybar/bubble-polybar/scripts/date/date.sh
