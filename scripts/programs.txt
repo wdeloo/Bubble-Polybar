@@ -4,7 +4,7 @@ nautilus
 kitty
 rofi -show run
 
-1: browser launcher
+1: browser
 2: file editor
 3: file manager
 4: terminal
