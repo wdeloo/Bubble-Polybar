@@ -77,6 +77,7 @@ In order to run this polybar dotfiles, you have to install the following depende
 - Edit the **~/.config/polybar/bubble-polybar/scripts/programs.txt** file and edit the **programs** you want to run when clicking on each module at the right of the bar (*browser*, *text editor*, *file manager*, *terminal*, *launcher*):
 
 		$: nano ~/.config/polybar/bubble-polybar/scripts/programs.txt
+- To change the notes, use the scripts **~/.config/polybar/bubble-polybar/scripts/note/note1** and **~/.config/polybar/bubble-polybar/scripts/note/note2**.
 ## **Run** or **Refresh** Bubble Polybar
 - Run the "**bubble-run.sh**" script:
 
